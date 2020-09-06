@@ -1,0 +1,115 @@
+body {
+    color: #33121C;
+  }
+  
+  /*Element styles*/
+  
+  /*Left-line styles*/
+  .left-border-title{
+    position: relative;
+    left: -6px;
+  }
+  
+  .left-border-line {
+    border-left: 2px solid  #781031;
+    padding-left: 30px; 
+  }
+  
+  /*Buttons*/
+  .btn{
+    border-radius: 19px;
+    background-color: #781;
+    border: 2px solid #fff;
+    color: #fff;
+  }
+  
+  .btn:hover{
+    background-color: #33121C;
+    border: 2px solid #33121C;
+    color: #F5D5E1;
+  }
+  
+  /*Navbar*/
+  .navbar {
+    border-bottom: 1px solid darkgreen;
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+    color: #781;
+  }
+  
+  .navbar-light .navbar-nav .nav-link:hover{
+    padding-bottom:6px;
+    border-bottom: 2px solid #781031;
+  }
+  
+  /*Hero section*/
+  #hero {
+    background: url("../images/logo-light.svg") no-repeat;
+    background-position: 85% 5%;
+    background-size: 30% auto;
+  }
+  
+  .jumbotron {
+    background-color:transparent;
+  }
+  
+  #title-hi {
+    display: block;
+  }
+  
+  .jumbotron h1 {
+    color: #781031;
+  }
+  
+  /*Featured project section*/
+  
+  #featured-projects{
+    background-color:#d8d8d8;
+  }
+  
+  #featured-projects .container{
+    position: relative;
+    top: -35px;
+  }
+  
+  /*cards*/
+  .card {
+    border: none;
+    background-color: transparent;
+    margin-bottom: 3rem;
+  }
+  
+  /*card image*/
+  .card-img, 
+  .card-img-top {
+    border-radius: calc(0.25rem - 1px);
+  }
+  
+  .card-img-top {
+    box-shadow: 0 4px 5px 0 gray;
+    transition: 0.5s ease;
+  }
+  
+  .card-img-top:hover{
+    transform: scale(1.03);
+  }
+  
+  /*footer*/
+  .footer {
+    background-color: #781; 
+    color: #F5D5E1;
+  }
+  
+  .footer a {
+    color: #F5D5E1;
+  }
+  
+  .footer a:hover{
+    text-decoration: none;
+    border-bottom: 2px solid #F5D5E1;
+  }
+  
+  .footer a:active{
+    color: lightgray;
+  }
