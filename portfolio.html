@@ -1,170 +1,393 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!Doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prince Inoba | Porfolio</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation-prototype.min.css">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="bootstrap/bootstrap.css">
     <link rel="stylesheet" href="https://use.typekit.net/shn3tym.css">
-    <link rel="icon" type="image/png" href="images/codefav.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
     <meta name="description" content="Prince Inoba | Full-Stack Web Developer - Portfolio" />
-    <title>Prince Inoba | Portfolio</title>
-</head>
-<body>
-    <div class="container">
-
-    <!-- Begin Navbar -->
-    <header>       
-        <nav class="navbar navbar-expand-lg navbar-light mb-4">
-            <a class="navbar-brand" href="#">Prince Inoba</a>
-            <!--Hamburger Icon Button-->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <!--Nav links-->
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-              <ul class="navbar-nav align-items-end">
-                <li class="nav-item">
-                  <a class="nav-link h5 mb-0" href="portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link h5 mb-0" href="index.html">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link h5 mb-0" href="contact.html">Contact</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-    </header>
-
-    <!-- Row 1 -->
-    <main>
-    <div class="row">
-        <h1 class="mx-auto mt-5 mb-5">Portfolio</h1>
+    <!-- optional CDN for Foundation Icons ^^ -->
+  </head>
+  <body>
+    <!-- Info Banner For Announcements or Links -->
+    <!-- <a href="https://zurb.com/university/foundation-intro" class="docs-banner course-banner">
+      <div class="info">
+        <h5 class=""><strong>To master everything new in 6.4, along with the rest of Foundation register for our Aug 8th Webinar Class &rsaquo;</strong></h5>
+      </div>
+    </a> -->
+    
+    <!-- <a href="https://zurb.com/wired" id="notice">
+      <div class="info hide-for-small">
+        <div id="clockdiv" class="countdown">
+            <span class="timer-day days"></span>
+            <span class="timer-colon">:</span>
+          <span class="timer-hour hours"></span>
+          <span class="timer-colon">:</span>
+          <span class="timer-hour minutes"></span>
+          <span class="timer-colon">:</span>
+          <span class="timer-seconds seconds"></span>
+        </div>
+      </div>
+    </a> -->
+    <div class="off-canvas position-left reveal-for-large" id="my-info" data-off-canvas>
+      <div class="grid-y grid-padding-x" style="height: 100%;">
+        <br>
+        <div class="cell shrink">
+          <img class="thumbnail" src="C:\Users\royce\Documents\New folder\bootcamp-homework2\images\prince-royce.jpg" width="550px" height="350px" alt="Card image cap.">
+        </div>
+        <div class="cell auto">
+          <h5>Prince Inoba</h5>
+          <p>The eyes of your understanding being enlightened; that ye may know what is the hope of his calling, and what the riches of the glory of his inheritance in the saints,</p>
+        </div>
+      </div>
     </div>
+    
+    <div class="off-canvas-content" data-off-canvas-content>
+      <div class="title-bar hide-for-large">
+        <div class="title-bar-left">
+          <button class="menu-icon" type="button" data-toggle="my-info"></button>
+          <span class="title-bar-title">Prince Inoba</span>
+        </div>
+      </div>
+    
+              <!-- Start Top Bar -->
+              <div class="top-bar">
+                <div class="top-bar-left">
+                  <ul class="dropdown menu" data-dropdown-menu>
+                    <li class="menu-text">Prince Inoba</li>
+                    <li class="has-submenu">
+                      <a href="index.html">About</a>
+                      <ul class="submenu menu vertical" data-submenu>
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="Portfolio.html">Portfolio</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="Portfolio.html">Portfolio</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                  </ul>
+                </div>
+                <div class="top-bar-right">
+                  <ul class="menu">
+                    <li><input type="search" placeholder="Search"></li>
+                    <li><button type="button" class="button">Search</button></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- End Top Bar -->
+              <br>
+            <article class="grid-container">
+              <div class="grid-x cell">
+                <nav aria-label="You are here:" role="navigation">
+                  <ul class="breadcrumbs">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li class="disabled">Teoyube</li>
+                    <li>
+                      <span class="show-for-sr">Current: </span> Cloning
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+          
+              <div class="">
+                <hr>
+                <ul class="tabs" data-tabs id="example-tabs">
+                  <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Reviews</a></li>
+                  <li class="tabs-title"><a href="#panel2">Portfolio</a></li>
+                </ul>
+                <div class="tabs-content" data-tabs-content="example-tabs">
+                  <div class="tabs-panel is-active" id="panel1">
+                    <h4>Reviews</h4>
+                    <div class="media-object stack-for-small">
+                      <div class="media-object-section">
+                        <img class="thumbnail" src="C:\Users\royce\Documents\New folder\bootcamp-homework2\images\code refactor.PNG" width="286px" height="180px" alt="Card image cap.">
+                      </div>
+                      <div class="media-object-section">
+                        <h5>Mike Stevenson</h5>
+                        <p>I'm going to improvise. Listen, there's something you should know about me... about inception. An idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you.</p>
+                      </div>
+                    </div>
+                    <div class="media-object stack-for-small">
+                      <div class="media-object-section">
+                        <img class="thumbnail" src="C:\Users\royce\Documents\New folder\bootcamp-homework2\images\weather dashboard.PNG" width="286px" height="180px" alt="Card image cap.">
+                      </div>
+                      <div class="media-object-section">
+                        <h5>Mike Stevenson</h5>
+                        <p>I'm going to improvise. Listen, there's something you should know about me... about inception. An idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you</p>
+                      </div>
+                    </div>
+                    <div class="media-object stack-for-small">
+                      <div class="media-object-section">
+                        <img class="thumbnail" src="C:\Users\royce\Documents\New folder\bootcamp-homework2\images\password generator.PNG" width="286px" height="180px" alt="Card image cap.">
+                      </div>
+                      <div class="media-object-section">
+                        <h5>Mike Stevenson</h5>
+                        <p>I'm going to improvise. Listen, there's something you should know about me... about inception. An idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you</p>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="messageInput">Message</label>
+                      <textarea class="form-control" id="messageInput" rows="2"></textarea>
+                    </div>
+                    <!-- <label>
+                      My Review
+                      <textarea placeholder="None"></textarea>
+                    </label> -->
+                    <button class="button">Submit Review</button>
+                  </div>
+                  <div class="tabs-panel" id="panel2">
+                    <div class="grid-x grid-margin-x medium-up-3 large-up-5">
+                      <div class="row mb-5">
+                        <div class="col-md-3 d-flex justify-content-center">
+                          <div class="card text-center mb-3" style="width: 18rem;">
+                              <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/en/2/27/The_Project_Title_Card.jpg" width="286px" height="180px" alt="Card image cap.">
+                              <div class="card-body">
+                                <h2 class="card-title">Project 2</h2>
+                                <p class="card-text">
+                                  The eyes of your understanding being enlightened; that ye may know what is the hope of his calling, and what the riches of the glory of his inheritance in the saints,
+                                </p>
+                                <a href="#" class="btn btn-primary">View Project</a>
+                              </div>
+                          </div>
+                      </div>
+                        <div class="col-md-3 d-flex justify-content-center">
+                            <div class="card text-center mb-3" style="width: 18rem;">
+                                <img class="card-img-top" src="https://i.ytimg.com/vi/gBV0wehj9YE/maxresdefault.jpg" width="286px" height="180px" alt="Card image cap.">
+                                <div class="card-body">
+                                  <h2 class="card-title">Project 1</h2>
+                                  <p class="card-text">
+                                    The eyes of your understanding being enlightened; that ye may know what is the hope of his calling, and what the riches of the glory of his inheritance in the saints,
+                                  </p>
+                                  <a href="#" class="btn btn-primary">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 d-flex justify-content-center">
+                            <div class="card text-center mb-3" style="width: 18rem;">
+                                <img class="card-img-top" src="https://i.ytimg.com/vi/984XRjfcjXM/maxresdefault.jpg" width="286px" height="180px" alt="Card image cap.">
+                                <div class="card-body">
+                                  <h2 class="card-title">Project 2</h2>
+                                  <p class="card-text">
+                                    The eyes of your understanding being enlightened; that ye may know what is the hope of his calling, and what the riches of the glory of his inheritance in the saints,
+                                  </p>
+                                  <a href="#" class="btn btn-primary">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 d-flex justify-content-center">
+                            <div class="card text-center mb-3" style="width: 18rem;">
+                                <img class="card-img-top" src="https://www.lanternaeducation.com/wp-content/uploads/2015/05/PuzzlePiece2.jpg" width="286px" height="180px" alt="Card image cap.">
+                                <div class="card-body">
+                                  <h2 class="card-title">Project 3</h2>
+                                  <p class="card-text">
+                                    The eyes of your understanding being enlightened; that ye may know what is the hope of his calling, and what the riches of the glory of his inheritance in the saints,
+                                  </p>
+                                  <a href="#" class="btn btn-primary">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 d-flex justify-content-center">
+                          <div class="card text-center mb-3" style="width: 18rem;">
+                              <img class="card-img-top" src="https://taskulu.com/wp-content/uploads/2016/09/Construction-Project-Management.jpg" width="286px" height="180px" alt="Card image cap.">
+                              <div class="card-body">
+                                <h2 class="card-title">Project 2</h2>
+                                <p class="card-text">
+                                  The eyes of your understanding being enlightened; that ye may know what is the hope of his calling, and what the riches of the glory of his inheritance in the saints,
+                                </p>
+                                <a href="#" class="btn btn-primary">View Project</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-3 d-flex justify-content-center">
+                        <div class="card text-center mb-3" style="width: 18rem;">
+                            <img class="card-img-top" src="https://cdn.twproject.com/site/wp-content/uploads/project-costs-management.jpg" width="286px" height="180px" alt="Card image cap.">
+                            <div class="card-body">
+                              <h2 class="card-title">Project 2</h2>
+                              <p class="card-text">
+                                The eyes of your understanding being enlightened; that ye may know what is the hope of his calling, and what the riches of the glory of his inheritance in the saints,
+                              </p>
+                              <a href="#" class="btn btn-primary">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 d-flex justify-content-center">
+                      <div class="card text-center mb-3" style="width: 18rem;">
+                          <img class="card-img-top" src="https://media.istockphoto.com/photos/professional-project-manager-with-icons-about-planning-tasks-and-on-picture-id1135541613?k=6&m=1135541613&s=612x612&w=0&h=okistvCb1fSh619g9TQHY0k7-iJgE6jdfuzoc8M07N0=" width="286px" height="180px" alt="Card image cap.">
+                          <div class="card-body">
+                            <h2 class="card-title">Project 2</h2>
+                            <p class="card-text">
+                              The eyes of your understanding being enlightened; that ye may know what is the hope of his calling, and what the riches of the glory of his inheritance in the saints,
+                            </p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-3 d-flex justify-content-center">
+                    <div class="card text-center mb-3" style="width: 18rem;">
+                        <img class="card-img-top" src="https://tacomachristiancounseling.com/wp-content/uploads/2017/05/useful-tips-for-christians-struggling-with-codependency-3.jpg" width="286px" height="180px" alt="Card image cap.">
+                        <div class="card-body">
+                          <h2 class="card-title">Project 2</h2>
+                          <p class="card-text">
+                            The eyes of your understanding being enlightened; that ye may know what is the hope of his calling, and what the riches of the glory of his inheritance in the saints,
+                          </p>
+                          <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                      <!-- <div class="cell">
+                        <img class="thumbnail" src="https://upload.wikimedia.org/wikipedia/en/2/27/The_Project_Title_Card.jpg" width="286px" height="180px" alt="Card image cap.">
+                        <h5>Other Project <small>Eph1:18</small></h5>
+                        <p>The eyes of your understanding being enlightened; that ye may know what is the hope of his calling, and what the riches of the glory of his inheritance in the saints,</p>
+                        <a href="#" class="button hollow tiny expanded">View Project</a>
+                      </div>
+                      <div class="cell">
+                        <img class="thumbnail" src="https://i.ytimg.com/vi/gBV0wehj9YE/maxresdefault.jpg" width="286px" height="180px" alt="Card image cap." >
+                        <h5>Other Project <small>Eph1:18</small></h5>
+                        <p>The eyes of your understanding being enlightened; that ye may know what is the hope of his calling, and what the riches of the glory of his inheritance in the saints,</p>
+                        <a href="#" class="button hollow tiny expanded">View Project</a>
+                      </div>
+                      <div class="cell">
+                        <img class="thumbnail" src="https://taskulu.com/wp-content/uploads/2016/09/Construction-Project-Management.jpg"  width="286px" height="180px" alt="Card image cap.">
+                        <h5>Other Project <small>Eph1:18</small></h5>
+                        <p>The eyes of your understanding being enlightened; that ye may know what is the hope of his calling, and what the riches of the glory of his inheritance in the saints,</p>
+                        <a href="#" class="button hollow tiny expanded">View Project</a>
+                      </div>
+                      <div class="cell">
+                        <img class="thumbnail" src="https://cdn.twproject.com/site/wp-content/uploads/project-costs-management.jpg"  width="286px" height="180px" alt="Card image cap.">
+                        <h5>Other Project <small>Eph1:18</small></h5>
+                        <p>The eyes of your understanding being enlightened; that ye may know what is the hope of his calling, and what the riches of the glory of his inheritance in the saints,</p>
+                        <a href="#" class="button hollow tiny expanded">View Project</a>
+                      </div>
+                      <div class="cell">
+                        <img class="thumbnail" src="https://media.istockphoto.com/photos/professional-project-manager-with-icons-about-planning-tasks-and-on-picture-id1135541613?k=6&m=1135541613&s=612x612&w=0&h=okistvCb1fSh619g9TQHY0k7-iJgE6jdfuzoc8M07N0="  width="286px" height="180px" alt="Card image cap.">
+                        <h5>Other Project <small>Eph1:18</small></h5>
+                        <p>The eyes of your understanding being enlightened; that ye may know what is the hope of his calling, and what the riches of the glory of his inheritance in the saints,</p>
+                        <a href="#" class="button hollow tiny expanded">View Project</a>
+                      </div>
+                      <div class="cell">
+                        <img class="thumbnail" src="https://www.lanternaeducation.com/wp-content/uploads/2015/05/PuzzlePiece2.jpg" width="286px" height="180px" alt="Card image cap.">
+                        <h5>Other Project <small>Eph1:18</small></h5>
+                        <p>The eyes of your understanding being enlightened; that ye may know what is the hope of his calling, and what the riches of the glory of his inheritance in the saints,</p>
+                        <a href="#" class="button hollow tiny expanded">View Project</a>
+                      </div>
+                      <div class="cell">
+                        <img class="thumbnail" src="https://tacomachristiancounseling.com/wp-content/uploads/2017/05/useful-tips-for-christians-struggling-with-codependency-3.jpg" width="286px" height="180px" alt="Card image cap.">
+                        <h5>Other Project <small>Eph1:18</small></h5>
+                        <p>The eyes of your understanding being enlightened; that ye may know what is the hope of his calling, and what the riches of the glory of his inheritance in the saints,</p>
+                        <a href="#" class="button hollow tiny expanded">View Project</a>
+                      </div>
+                      <div class="cell">
+                        <img class="thumbnail" src="https://images.unsplash.com/photo-1477453559950-e541fa922120" width="286px" height="180px" alt="Card image cap.">
+                        <h5>Other Project <small>Eph1:18</small></h5>
+                        <p>The eyes of your understanding being enlightened; that ye may know what is the hope of his calling, and what the riches of the glory of his inheritance in the saints,</p>
+                        <a href="#" class="button hollow tiny expanded">View Project</a>
+                      </div>
+                      <div class="cell">
+                        <img class="thumbnail" src="https://i.ytimg.com/vi/984XRjfcjXM/maxresdefault.jpg" width="286px" height="180px" alt="Card image cap.">
+                        <h5>Other Project <small>Eph1:18</small></h5>
+                        <p>The eyes of your understanding being enlightened; that ye may know what is the hope of his calling, and what the riches of the glory of his inheritance in the saints,</p>
+                        <a href="#" class="button hollow tiny expanded">View Project</a>
+                      </div>
+                      <div class="cell">
+                        <img class="thumbnail" src="C:\Users\royce\Documents\New folder\bootcamp-homework2\images\code refactor.PNG" width="286px" height="180px" alt="Card image cap.">
+                        <h5>Other Project <small>Eph1:18</small></h5>
+                        <p>The eyes of your understanding being enlightened; that ye may know what is the hope of his calling, and what the riches of the glory of his inheritance in the saints,</p>
+                        <a href="#" class="button hollow tiny expanded">View Project</a>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
 
-    <div class="row mb-5">
-        <div class="col-md-4 d-flex justify-content-center">
-            <div class="card text-center mb-3" style="width: 18rem;">
-                <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/en/2/27/The_Project_Title_Card.jpg" width="286px" height="180px" alt="Card image cap.">
-                <div class="card-body">
-                  <h2 class="card-title">Project 1</h2>
-                  <p class="card-text">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia beatae adipisci culpa placeat non fuga voluptate atque molestias.
-                  </p>
-                  <a href="#" class="btn btn-primary">View Project</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 d-flex justify-content-center">
-            <div class="card text-center mb-3" style="width: 18rem;">
-                <img class="card-img-top" src="https://i.ytimg.com/vi/gBV0wehj9YE/maxresdefault.jpg" width="286px" height="180px" alt="Card image cap.">
-                <div class="card-body">
-                  <h2 class="card-title">Project 2</h2>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia beatae adipisci culpa placeat non fuga voluptate atque molestias.
-                  </p>
-                  <a href="#" class="btn btn-primary">View Project</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 d-flex justify-content-center">
-            <div class="card text-center mb-3" style="width: 18rem;">
-                <img class="card-img-top" src="https://www.lanternaeducation.com/wp-content/uploads/2015/05/PuzzlePiece2.jpg" width="286px" height="180px" alt="Card image cap.">
-                <div class="card-body">
-                  <h2 class="card-title">Project 3</h2>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia beatae adipisci culpa placeat non fuga voluptate atque molestias.
-                  </p>
-                  <a href="#" class="btn btn-primary">View Project</a>
-                </div>
-            </div>
-        </div>
-    </div>
+              <hr>
+              
+        <!-- Footer -->
+        <footer class="footer mt-auto">
+          <div class="dark-span">
+              <div class="container pt-3 pb-3">
+                  <div class="row mt-3 mb-2">
+                      <div class="col-md-3"></div>
+                      <div class="col-md-6 d-flex justify-content-center">
+                          <a href="https://github.com/princeinoba/bootcamp-homework2" target="_blank" class="mr-5 ml-3" rel="noopener">
+                              <img src="images/social/github.png" alt="GitHub">
+                          </a>
+                          <a href="https://www.linkedin.com/in/prince-inoba-803990121/" target="_blank" class="mr-5" rel="noopener">
+                              <img src="images/social/linkedin.png" alt="LinkedIn">
+                          </a>
+                          <a href="https://twitter.com/@RoyceInoba" target="_blank" class="mr-5" rel="noopener">
+                              <img src="images/social/twitter.png" alt="Twitter">
+                          </a>
+                          <a href="mailto:princeinoba@cmail.carleton.ca">
+                              <img src="images/social/email.png" alt="Email">
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          </footer> 
 
-    <!-- Row 2 -->
-    <div class="row mb-5">
-        <div class="col-md-4 d-flex justify-content-center">
-            <div class="card text-center mb-3" style="width: 18rem;">
-                <img class="card-img-top" src="https://media.istockphoto.com/photos/professional-project-manager-with-icons-about-planning-tasks-and-on-picture-id1135541613?k=6&m=1135541613&s=612x612&w=0&h=okistvCb1fSh619g9TQHY0k7-iJgE6jdfuzoc8M07N0=" width="286px" height="180px" alt="Card image cap.">
-                <div class="card-body">
-                  <h2 class="card-title">Project 4</h2>
-                  <p class="card-text">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia beatae adipisci culpa placeat non fuga voluptate atque molestias.
-                  </p>
-                  <a href="#" class="btn btn-primary">View Project</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 d-flex justify-content-center">
-            <div class="card text-center mb-3" style="width: 18rem;">
-                <img class="card-img-top" src="https://taskulu.com/wp-content/uploads/2016/09/Construction-Project-Management.jpg" width="286px" height="180px" alt="Card image cap.">
-                <div class="card-body">
-                  <h2 class="card-title">Project 5</h2>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia beatae adipisci culpa placeat non fuga voluptate atque molestias.
-                  </p>
-                  <a href="#" class="btn btn-primary">View Project</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 d-flex justify-content-center">
-            <div class="card text-center mb-3" style="width: 18rem;">
-                <img class="card-img-top" src="https://cdn.twproject.com/site/wp-content/uploads/project-costs-management.jpg" width="286px" height="180px" alt="Card image cap.">
-                <div class="card-body">
-                  <h2 class="card-title">Project 6</h2>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia beatae adipisci culpa placeat non fuga voluptate atque molestias.
-                  </p>
-                  <a href="#" class="btn btn-primary">View Project</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    </main>
-    </div>
-    </header>
 
-    <!-- Footer -->
-    <footer class="footer mt-auto py-3">
-    <div class="dark-span">
-        <div class="container pt-5 pb-5">
-            <div class="row">
-                <h3 class="dark-bg mx-auto mb-4">Ready to start?</h3>
-            </div>
-            <div class="row d-flex justify-content-center pb-4">
-                <a class="btn btn-light btn-lg" href="contact.html" role="botton"> 
-                    "Let's Connect   "
-                <i class="fa fa-long-arrow-right" aria-hidden="true">
-                 </i>
-                </a>
-            </div>
-            <div class="row mt-5 mb-2">
-                <div class="col-md-3"></div>
-                <div class="col-md-6 d-flex justify-content-center">
-                    <a href="https://github.com/princeinoba/bootcamp-homework2" target="_blank" class="mr-5 ml-3" rel="noopener">
-                        <img src="images/social/github.png" alt="GitHub">
-                    </a>
-                    <a href="https://www.linkedin.com/in/prince-inoba-803990121/" target="_blank" class="mr-5" rel="noopener">
-                        <img src="images/social/linkedin.png" alt="LinkedIn">
-                    </a>
-                    <a href="https://twitter.com/@RoyceInoba" target="_blank" class="mr-5" rel="noopener">
-                        <img src="images/social/twitter.png" alt="Twitter">
-                    </a>
-                    <a href="mailto:princeinoba@cmail.carleton.ca">
-                        <img src="images/social/email.png" alt="Email">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    </footer>   
 
-    <!-- Bootstrap JS dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-</body>
-</html>
+    <!-- <footer class="footer mt-auto py-3">
+      <div class="dark-span">
+          <div class="container pt-5 pb-5">
+              <div class="row">
+                  <h3 class="blue-bg mx-auto mb-4">Ready to start?</h3>
+              </div>
+              <div class="row d-flex justify-content-center pb-4">
+                  <a href="contact.html"><button class="btn btn-light btn-lg" type="submit">Let's Connect</button></a>
+              </div>
+              <div class="row mt-5 mb-2">
+                  <div class="col-md-3"></div>
+                  <div class="col-md-6 d-flex justify-content-center">
+                      <a href="https://github.com/princeinoba/bootcamp-homework2" target="_blank" class="mr-5 ml-3" rel="noopener">
+                          <img src="images/social/github.png" alt="GitHub.">
+                      </a>
+                      <a href="https://www.linkedin.com/in/prince-inoba-803990121/" target="_blank" class="mr-5" rel="noopener">
+                          <img src="images/social/linkedin.png" alt="LinkedIn.">
+                      </a>
+                      <a href="https://twitter.com/@RoyceInoba" target="_blank" class="mr-5" rel="noopener">
+                          <img src="images/social/twitter.png" alt="Twitter.">
+                      </a>
+                      <a href="mailto:princeinoba@cmail.carleton.ca">
+                          <img src="images/social/email.png" alt="Email.">
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </footer>   -->
+
+              <div class="grid-x align-justify align-middle">
+                <div class="small-12 medium-shrink cell">
+                  <ul class="menu">
+                    <li class="align-self-middle">Prince Inoba</li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="Portfolio.html">Portfolio</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                  </ul>
+                </div>
+
+    <footer> 
+                <div class="small-12 medium-shrink cell">
+                  <span>Copyright 2020</span>
+                </div>
+              </div>
+            </article>
+    </footer> 
+      
+          <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.js"></script>
+          <script>
+            $(document).foundation();
+          </script>
+        </body>
+      </html> 
