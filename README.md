@@ -64,7 +64,7 @@ First, you will use the Bootstrap CSS Framework to create a mobile responsive po
 * Must contain your personalized information. (bio, name, images, links to social media, etc.)
 
 * Must properly utilize Bootstrap components and grid system.
-![Responsive Portfolio demo](C:\Users\royce\Documents\portfolio\bootcamp-homework2\images\CaptureScreenShotPortfolio.PNG)
+![Responsive Portfolio demo](images\CaptureScreenShotPortfolio.PNG)
 
 ### Bonus
 
